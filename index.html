@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Rizaldi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #0f172a;
-            color: #f0e2e2;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Rizaldi</title>
 
-        header {
-            background-color: #020617;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid #1e293b;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0f172a;
+    color: #f0e2e2;
+}
 
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
-        }
+/* HEADER */
+header {
+    background-color: #020617;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #1e293b;
+}
 
-        .container {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+header h1 {
+    margin: 0;
+    color: #38bdf8;
+}
 
-        .profile {
-            text-align: center;
-            margin-top: 20px;
-        }
 
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #38bdf8;
-        }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
 
-        .profile h2 {
-            margin-top: 10px;
-        }
 
-        .section {
-            margin-top: 40px;
-        }
+.box {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+}
 
-        .section h2 {
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 5px;
-            color: #38bdf8;
-        }
 
-        .project {
-            background: #1e293b;
-            padding: 15px;
-            margin-top: 15px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
+h2 {
+    border-bottom: 2px solid #38bdf8;
+    color: #38bdf8;
+    padding-bottom: 5px;
+}
 
-        .project:hover {
-            transform: scale(1.02);
-            background: #0f66df;
-        }
 
-        footer {
-            background-color: #020617;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-            border-top: 1px solid #1e293b;
-        }
+.profile {
+    text-align: center;
+}
 
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
 
-        /* TAMBAHAN dari konsep ke-2 */
-        .experience span {
-            display: inline-block;
-            background: #0f66df;
-            color: white;
-            padding: 6px 12px;
-            margin: 5px;
-            border-radius: 20px;
-        }
-    </style>
+.experience span {
+    display: inline-block;
+    background: #0f66df;
+    color: white;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+
+.project {
+    background: #0f172a;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* ABOUT BOX */
+.about-box {
+    background: #0f172a;
+    padding: 10px;
+    border-left: 4px solid #38bdf8;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
@@ -106,74 +112,71 @@
 
 <div class="container">
 
-    <div class="profile">
-        <img src="saldi.jpeg" alt="Foto Profil">
-        <h2>Rizaldi</h2>
-        <p>D0225009</p>
-        <p>Universitas Sulawesi Barat</p>
-        <p>Web Developer Pemula</p>
-    </div>
+   
+    <div class="box">
+        <div class="profile">
+            <img src="gambar/saldi/saldi.jpeg">
+            <h2>Rizaldi</h2>
+            <p>D0225009</p>
+            <p>Universitas Sulawesi Barat</p>
+            <p>Web Developer Pemula</p>
+        </div>
 
-    <!-- ABOUT -->
-    <div class="section">
-        <h2>Tentang Saya</h2>
+        <h2>About Me</h2>
         <p>
-            Halo! Saya Rizaldi, seorang mahasiswa yang tertarik pada dunia teknologi,
-            programming, dan pengembangan sistem. Saya suka membangun project dan
-            terus mengembangkan skill untuk masa depan.
+            Halo! Saya <b>Rizaldi</b>, seorang mahasiswa dari 
+            <b>Universitas Sulawesi Barat Angkatan 2025</b> yang tertarik pada 
+            <b>teknologi</b>, <b>programming</b>, dan 
+            <b>pengembangan sistem</b>.
         </p>
+
+      
+        <ul>
+            <li>Suka belajar coding</li>
+            <li>Tertarik web development</li>
+            <li>Ingin menjadi developer profesional</li>
+        </ul>
+
+       
+        <div class="about-box">
+            <p><i>"Terus belajar dan berkembang adalah kunci masa depan."</i></p>
+        </div>
     </div>
 
-    <!-- EXPERIENCE (ditambahkan dari kodingan 2) -->
-    <div class="section">
+    
+    <div class="box">
         <h2>Experience</h2>
         <div class="experience">
             <span>Java Programming</span>
             <span>Web Development</span>
             <span>OOP Concept</span>
-            <span>UI Design</span>
-            <span>Problem Solving</span>
-        </div>
-    </div>
-
-    <!-- PROJECT -->
-    <div class="section">
-        <h2>Project</h2>
-
-        <div class="project">
-            <h3>Fortofolio sederhana</h3>
-            <p>Membuat portfolio sederhana menggunakan HTML.</p>
+            <span>VScode</span>
         </div>
 
-        
+        <h2>Skill</h2>
 
-        <!-- tambahan dari kodingan 2 -->
         <div class="project">
-            <h3>Belajar Membuat Web</h3>
-            <p>Belajar membuat web HTML sederhana menggunakan VScode.</p>
+            <h3>Web HTML</h3>
+            <p>Mampu membuat Web sederhana seperti HTML.</p>
         </div>
 
         <div class="project">
-            <h3>Aplikasi OOP Multi-Class</h3>
-            <p>Menerapkan konsep OOP dalam beberapa class.</p>
+            <h3>Java Programming</h3>
+            <p>Bisa dasar-dasar dari Bahasa Pemrograman Java.</p>
         </div>
-    </div>
 
-    <!-- CONTACT -->
-    <div class="section">
-        <h2>Kontak</h2>
-        <p>Email: <a href = "#">rizaldisaldi@gmail.com</a></p>
+        <div class="project">
+            <h3>VScode</h3>
+            <p>Mampu mengoperasikan Aplikasi VScode.</p>
+        </div>
+
+        <h2>Contact Me</h2>
+        <p>Email: <a href="#">rizaldisaldi@gmail.com</a></p>
         <p>Instagram: <a href="#">@rizaldy.saldi</a></p>
-
-        <!-- tambahan konsep tombol -->
         <p><a href="#">Send Message</a> | <a href="#">View Profile</a></p>
     </div>
 
 </div>
-
-<footer>
-    <p>© 2026 Portfolio Rizaldi</p>
-</footer>
 
 </body>
 </html>
